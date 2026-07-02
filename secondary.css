@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100dvh;
+}
+section h1{
+    font-size: var(--text-normal);
+    text-align: center;
+    letter-spacing: var(--letter-spacing-normal);
+    word-spacing: var(--letter-spacing-wider);
+    line-height: var(--line-height-loose);
+    
+
+}
+section a{
+    justify-content: center;
+    text-align: center;
+    font-weight: var(--fw-medium);
+    text-decoration: underline;
+
+    transition: 0.3s;
+}
+section a:hover{
+    color: var(--primary-light);
+    transform: translate(0, -10%);
+}

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PreServices | Home</title>
+
+    <!-- Link CSS file  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Icon Library  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+    />
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="index.html">ProServices</a>
+        <input type="checkbox" class="side-bar" id="side-bar" />
+        <nav class="header-nav">
+          <label for="side-bar" class="close-side-bar-button">
+            <span class="material-symbols-outlined"> close </span>
+          </label>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="legal-disclaimer.html">Legal Disclaimer</a></li>
+        </nav>
+        <a href="form.html"
+          ><button class="primary-btn">Get a Quote</button>
+        </a>
+        <label for="side-bar" class="open-side-bar-button">
+          <span class="material-symbols-outlined"> menu </span>
+        </label>
+        <label for="side-bar" class="overlay"></label>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <section class="form container">
+      <h1>Complete The Form</h1>
+      <form action="data.php" method="get">
+        <div>
+          <label for="name">1. Full Name</label>
+          <input id="name" type="text" required />
+        </div>
+
+        <div>
+          <label for="email">2. Email Address</label>
+          <input id="email" type="email" required />
+        </div>
+
+        <div>
+          <label for="phone">3. Phone Number</label>
+          <input id="phone" type="text" required />
+        </div>
+
+        <div>
+          <label for="address">4. Street Address</label>
+          <input id="address" type="text" required />
+        </div>
+
+        <div>
+          <label for="city">5. City</label>
+          <input id="city" type="text" required />
+        </div>
+
+        <div>
+          <label for="state">6. State</label>
+          <input id="state" type="text" required />
+        </div>
+
+        <div>
+          <label for="zip">7. ZIP Code</label>
+          <input id="zip" type="text" required />
+        </div>
+
+        <div>
+          <label for="services">8. Service Needed:</label>
+          <select id="services">
+            <option value="Home Inspection"></option>
+            <option value="Roof Repair"></option>
+            <option value="Plumbing Services"></option>
+            <option value="Electrical Work"></option>
+            <option value="HVAC Service"></option>
+            <option value="Pest Control"></option>
+            <option value="Landscaping"></option>
+            <option value="Interior Painting"></option>
+            <option value="Exterior Painting"></option>
+            <option value="Flooring Installation"></option>
+            <option value="Window Replacement"></option>
+            <option value="Door Installation"></option>
+            <option value="Deck Building"></option>
+            <option value="Fence Installation"></option>
+            <option value="Gutter Cleaning"></option>
+            <option value="Pool Maintenance"></option>
+            <option value="Appliance Repair"></option>
+            <option value="Moving Services"></option>
+            <option value="Junk Removal"></option>
+            <option value="General Handyman"></option>
+          </select>
+        </div>
+
+        <div>
+          <label for="date">9. Preferred Date</label>
+          <input id="date" type="date" required />
+        </div>
+
+        <div>
+          <label for="time">10. Preferred Time</label>
+          <select id="time">
+            <option value="Morning">Morning</option>
+            <option value="Afternoon">Afternoon</option>
+            <option value="Evening">Evening</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="about-us">11. How did you hear about us?</label>
+          <select id="about-us">
+            <option value="Instagram">Instagram</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Twitter">Twitter</option>
+            <option value="Youtube">Youtube</option>
+            <option value="The Web">The Web</option>
+            <option value="Friend">Friend</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="description">12. Job Description</label>
+          <textarea id="description" placeholder="write here."></textarea>
+        </div>
+
+        <input type="submit" value="Submit My Request" />
+      </form>
+    </section>
+    <script src="form.js"></script>
+  </body>
+</html>
