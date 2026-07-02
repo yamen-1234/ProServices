@@ -730,7 +730,7 @@ button {
 @media (max-width: 800px) {
   .cta .container {
     flex-direction: column;
-    padding: var(--space-8);
+    padding: var(--space-8) var(--space-4);
   }
   .cta h2 {
     display: flex;
